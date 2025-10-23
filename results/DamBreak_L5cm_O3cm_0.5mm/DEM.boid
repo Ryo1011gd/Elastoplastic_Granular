@@ -1,0 +1,51 @@
+# Sample
+ParticleDistance        0.0005
+LowerDomain                -0.1     0.0   0.0
+UpperDomain               0.21       0.17 0.02
+
+StartCuboid
+    Spacing        0.0005
+    Type           2
+RigidType         10
+    Lower           0.00     0.003  0.0
+    Upper           0.02      0.053 0.02
+    Velocity        0.0 0.0 0.0
+Enthalpy		0
+EndCuboid
+StartCuboid
+    Spacing        0.0005
+    Type           4
+RigidType         -1
+    Lower           0.00     0.000   0.0
+    Upper           0.2      0.003  0.02
+    Velocity        0.0 0.0 0.0
+Enthalpy		0
+EndCuboid
+StartCuboid
+    Spacing        0.0005
+    Type           4
+RigidType         -1
+    Lower           0.200     0.00    0.0
+    Upper           0.203     0.17     0.02
+    Velocity        0.0 0.0 0.0
+Enthalpy		0
+EndCuboid
+StartCuboid
+    Spacing        0.0005
+    Type           4
+RigidType         -1
+    Lower           -0.003    0.00    0.0
+    Upper           0.00      0.17     0.02
+    Velocity        0.0 0.0 0.0
+Enthalpy		0
+EndCuboid
+StartCuboid
+    Spacing        0.0005
+    Type           4
+RigidType         -1
+    Lower           0.0200     0.033    0.0 
+    Upper           0.0230     0.17     0.02
+    Velocity        0.0 0.0 0.0
+Enthalpy		0
+EndCuboid
+

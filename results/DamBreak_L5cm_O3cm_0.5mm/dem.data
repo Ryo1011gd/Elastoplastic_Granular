@@ -1,0 +1,39 @@
+#######
+Dt				1.0e-5
+ElasticDt			1.0e-5
+OutputInterval			1.0
+VtkOutputInterval		1.0e-2
+EndTime				1.0
+RadiusRatioA					2.0
+RadiusRatioP					2.0
+RadiusRatioV					2.0
+Density						1.0e+3		1.0e+3		6.1e+3		1.0e+3      1.0e+3        6.0e+3
+BulkModulus					5.0e+6		1.0e+5		1.0e+4		1.0e+4       0.0e+0         1.0e+5
+BulkViscosity					1.0e+1		5.0e+0	   	1.0e-1    	2.0e+1       0.0e+0       1.0e+2
+ShearViscosity					1.0e-2		1.0e-3		1.0e-3		1.0e-1       0.0e+0       1.0e-1
+SurfaceTension					0.0072		0.01		0.00		0.000      
+YoungModulus                    		 3.0e+6       	 1e+5         	5e+4       	1e+4
+PoissonRatio                    		 0.30        	0.4          	0.20        	0.3
+Cohesion                          		 0.0        	0.0          	0.0      	 0.0
+InternalFrictionAngle                      	 14.0     	20          	20.0       	 20
+DilatancyFrictionAngle                    	 2e-2     	20          	1.0e-1       	 20
+InteractionRatio(Type0)			1.0			1.0			1.0			1.0         1.0            1.0
+InteractionRatio(Type1)			1.0			1.0			1.0			1.0         1.0            1.0
+InteractionRatio(Type2)			1.0			1.0			1.0			1.0         1.0            1.0
+InteractionRatio(Type3)			1.0			1.0			1.0			1.0         1.0            1.0
+InteractionRatio(Type4)			1.0			1.0			1.0			1.0         1.0            1.0
+InteractionRatio(Type5)			1.0			1.0			1.0			1.0         1.0            1.0
+Gravity                         0.0  -10.00 0.0
+Wall2    Center 0.0 0.0 0.0    Velocity 0.0  0.0 0.0    Omega 0.0 0.0 0.0
+Wall3    Center 0.0 0.0 0.0    Velocity 0.0  0.0 0.0    Omega 0.0 0.0 0.0
+
+#memo
+#砂粒の計算で重要なパラメータは、ヤング率、ポアソン比、内部摩擦角、ダイラタンシー角である。この４つを変更すること。
+#上記パラメータに関して４列ある。左から２列が弾塑性。そのとなりが壁である。それぞれの粒子番号は左から２，３（ここまで弾塑性），４，５（壁）
+#感度解析した結果、今回のケースに関してはヤング率が約1Mpa, ポアソン比0.20, 内部摩擦角15, ダイラタンシー0.２程度。（おそらく）
+#感度解析の実施に際しては、あまり大きく値を変化させないほうが良いと思われる。（例：ダイラタンシー：0.1刻み、内部摩擦角1刻み）
+#壁のヤング率の値も結構重要。壁から弾塑性に向けての反力に関係があると思われる。壁のヤング率を弾塑性と同等とすると安息角が鋭角となり、十分小さくすると、こんもり丸くなる傾向がある。
+
+
+
+
